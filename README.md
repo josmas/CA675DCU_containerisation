@@ -30,5 +30,7 @@ If you also map your local folder, you can run whatever python scripts you want
 from the terminal. Look at the docs for Bind Mounts and Volumes from the Docker
 site.
 
+# References
+The code in this repo is based on the article at: https://towardsdatascience.com/beginners-guide-to-data-science-python-docker-3181fd321a5c
 
 Jos, Oct 2019
