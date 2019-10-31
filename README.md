@@ -30,6 +30,17 @@ If you also map your local folder, you can run whatever python scripts you want
 from the terminal. Look at the docs for Bind Mounts and Volumes from the Docker
 site.
 
+# Step 5 (Optional)
+You can specify an `ENTRYPOINT` and a default `CMD` as in Dockerfile.entrypoint.
+To build this image you can use the following:
+`docker build -t jos/class_entrypoint:1 -f ./Dockerfile.entrypoint .`
+
+If you run it as `docker run --rm --name class_ent_1 jos/class_entrypoint:1` you
+will see the output for classification_sample.py.
+
+If you run it as `docker run --rm --name class_ent_1 jos/class_entrypoint:1 another_python_sample.py`
+you will see the output for the second script.
+
 # References
 The code in this repo is based on the article at: https://towardsdatascience.com/beginners-guide-to-data-science-python-docker-3181fd321a5c
 

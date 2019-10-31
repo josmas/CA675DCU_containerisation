@@ -10,5 +10,7 @@ ADD . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
-# Run classification_sample.py when the container launches
-CMD ["python", "classification_sample.py"]
+# Run classification_Sample.py by default when the container launches, unless
+# otherwise specified in command line
+ENTRYPOINT ["python"]
+CMD ["classification_sample.py"]
